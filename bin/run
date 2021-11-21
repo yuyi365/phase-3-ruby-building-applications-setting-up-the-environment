@@ -1,7 +1,8 @@
 #!/usr/bin/env ruby 
+## bin/run --> starting point of the app
+## environment.rb --> file loads any required application files and handles configurations everytime the app starts
 
-require_relative '../lib/garden.rb'
-require_relative '../lib/plant.rb'
+require '../config/environment'
 
 lawn = Garden.new(name: 'Front Lawn')
 
